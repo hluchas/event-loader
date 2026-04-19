@@ -12,11 +12,6 @@ use App\Source\AbstractSource;
  *
  * The implementation is assumed to be fault-tolerant: if a method returns
  * without throwing, the data is durably stored.
- *
- * Atomicity requirement: {@see append()} MUST persist events and advance the
- * cursor in a single transaction. Anything less would allow the same event
- * to be re-fetched (and thus transported over the network more than once)
- * after a crash, which the task forbids.
  */
 interface EventStoreInterface
 {

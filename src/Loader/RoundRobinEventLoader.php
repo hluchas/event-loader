@@ -80,6 +80,13 @@ final class RoundRobinEventLoader implements EventLoaderInterface
         $this->logger = $logger ?? new NullLogger();
     }
 
+    /**
+     * TODO graceful shutdown?
+     *
+     * Right now it ends only on a hard signal (which may interrupt
+     * a fetch mid-flight and leave the lock to expire on its TTL) or on
+     * an uncaught Throwable.
+     */
     public function run(): void
     {
         /* Make sure we are not tripped by a non-default `max_execution_time`.
