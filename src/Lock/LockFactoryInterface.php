@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Port;
+namespace App\Lock;
 
 /**
  * Factory for {@see LockInterface} instances.

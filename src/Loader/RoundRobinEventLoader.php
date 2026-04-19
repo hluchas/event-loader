@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Loader;
 
-use App\Domain\AbstractSource;
-use App\Exception\EventFetchException;
-use App\Port\EventFetcherInterface;
-use App\Port\EventStoreInterface;
-use App\Port\LockFactoryInterface;
-use App\Port\SourceGateInterface;
+use App\EventFetcher\EventFetcherInterface;
+use App\EventFetcher\EventFetchException;
+use App\EventStore\EventStoreInterface;
+use App\Lock\LockFactoryInterface;
+use App\Source\AbstractSource;
+use App\SourceGate\SourceGateInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

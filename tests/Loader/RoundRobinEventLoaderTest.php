@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Tests\Loader;
 
-use App\Domain\AbstractSource;
-use App\Domain\Event;
-use App\Exception\EventFetchException;
+use App\Event;
+use App\EventFetcher\EventFetchException;
 use App\Loader\RoundRobinEventLoader;
+use App\Source\AbstractSource;
 use App\Tests\Support\ArrayLogger;
 use App\Tests\Support\CallableEventFetcher;
 use App\Tests\Support\InMemoryEventStore;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Domain;
+namespace App\Source;
 
 /**
  * Base type for an event source identified by a unique name.
@@ -13,7 +13,7 @@ namespace App\Domain;
  * `KafkaSource`, `InMemorySource`, etc.
  *
  * The core loader never inspects those extras — it treats sources as mere
- * identities. A concrete {@see \App\Port\EventFetcherInterface} implementation
+ * identities. A concrete {@see \App\EventFetcher\EventFetcherInterface} implementation
  * does use them; because PHP forbids narrowing parameter types, such an
  * implementation is expected to either:
  *

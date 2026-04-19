@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Support;
 
-use App\Domain\AbstractSource;
-use App\Port\SourceGateInterface;
+use App\Source\AbstractSource;
+use App\SourceGate\SourceGateInterface;
 
 /**
  * Source gate test double. Grants every request by default; a test can

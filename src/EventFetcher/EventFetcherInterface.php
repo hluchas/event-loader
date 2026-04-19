@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Port;
+namespace App\EventFetcher;
 
-use App\Domain\AbstractSource;
-use App\Domain\Event;
-use App\Exception\EventFetchException;
+use App\Event;
+use App\Source\AbstractSource;
 
 /**
  * Retrieves new events from a remote source.

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Support;
 
-use App\Port\LockFactoryInterface;
-use App\Port\LockInterface;
+use App\Lock\LockFactoryInterface;
+use App\Lock\LockInterface;
 
 /**
  * Lock factory test double that records every lifecycle event (create,

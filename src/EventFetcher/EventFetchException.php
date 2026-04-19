@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Exception;
+namespace App\EventFetcher;
 
 /**
- * Thrown by an {@see \App\Port\EventFetcherInterface} when it cannot obtain events
+ * Thrown by an {@see EventFetcherInterface} when it cannot obtain events
  * from the remote source (network failure, timeout, 5xx response, malformed
  * payload, …).
  *

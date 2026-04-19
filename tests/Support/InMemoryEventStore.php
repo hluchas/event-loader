@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Tests\Support;
 
-use App\Domain\AbstractSource;
-use App\Domain\Event;
-use App\Port\EventStoreInterface;
+use App\Event;
+use App\EventStore\EventStoreInterface;
+use App\Source\AbstractSource;
 
 /**
  * Simple in-memory {@see EventStoreInterface} that keeps a per-source list

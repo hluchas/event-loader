@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Port;
+namespace App\Lock;
 
 /**
  * A distributed mutex.

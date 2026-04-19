@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Port;
+namespace App\EventStore;
 
-use App\Domain\AbstractSource;
-use App\Domain\Event;
+use App\Event;
+use App\Source\AbstractSource;
 
 /**
  * Persistent storage of events and per-source cursors.

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Port;
+namespace App\SourceGate;
 
-use App\Domain\AbstractSource;
+use App\Source\AbstractSource;
 
 /**
  * Global rate limiter enforcing a minimum interval between consecutive

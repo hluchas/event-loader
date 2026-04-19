@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Tests\Support;
 
-use App\Domain\AbstractSource;
-use App\Domain\Event;
-use App\Exception\EventFetchException;
-use App\Port\EventFetcherInterface;
+use App\Event;
+use App\EventFetcher\EventFetcherInterface;
+use App\EventFetcher\EventFetchException;
+use App\Source\AbstractSource;
 
 /**
  * Test fetcher driven by a user-supplied closure. Records every call so

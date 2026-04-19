@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Support;
 
-use App\Domain\AbstractSource;
+use App\Source\AbstractSource;
 
 /**
  * Concrete {@see AbstractSource} for tests. The production code never
